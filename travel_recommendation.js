@@ -103,7 +103,7 @@ function displayCountryResults(countries) {
             <h2>${city.name}</h2>
             ${localTime ? `<div class="time">Local time: ${localTime}</div>` : ''}
             <p>${city.description}</p>
-            <button>Visit</button>
+            <button id="result">Visit</button>
           </div>
         </div>
       `;
