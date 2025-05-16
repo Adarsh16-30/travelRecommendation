@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TravelBloom</title>
+  <link rel="stylesheet" href="travel_recommendation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="flight.jpg" alt="TravelBloom Logo">
+      <span>TravelBloom</span>
+    </div>
+    <ul class="nav-links">
+      <li class="nav-link active" data-section="home">Home</li>
+      <li class="nav-link" data-section="about">About Us</li>
+      <li class="nav-link" data-section="contact">Contact Us</li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+      <button id="searchBtn">Search</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </aside>
+
+  <main>
+    <section id="homeSection" class="section active">
+      <div class="hero">
+        <h1>EXPLORE<br> DREAM<br> DESTINATION</h1>
+        <p class="hero-desc">
+          It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
+        </p>
+        <button class="book-now">BOOK NOW</button>
+      </div>
+      
+      <div id="searchResults" class="search-results"></div>
+    </section>
+
+    <section id="aboutSection" class="section">
+      <h1>ABOUT US</h1>
+      <div class="about-desc">
+        <p>
+          Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to <b>provide the best experience</b> for people traveling to different destinations around the world.<br>
+          Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in <b>putting our customers first</b> and <b>working together</b> to achieve our goals.<br>
+          Feel free to explore our website to learn more about what we offer!
+        </p>
+      </div>
+      <div class="team">
+        <h2>Our Team</h2>
+        <div class="team-members">
+          <div class="team-card">
+            <div class="team-icon"><i class="fas fa-user-tie"></i></div>
+            <h3>John Doe</h3>
+            <p>John is responsible for ...</p>
+            <span class="role">CEO</span>
+          </div>
+          <div class="team-card">
+            <div class="team-icon"><i class="fas fa-user-tie"></i></div>
+            <h3>Celina Thomas</h3>
+            <p>Celina Thomas is responsible for ...</p>
+            <span class="role">Team Lead</span>
+          </div>
+          <div class="team-card">
+            <div class="team-icon"><i class="fas fa-user-tie"></i></div>
+            <h3>Mike Tysen</h3>
+            <p>Mike Tysen is responsible for ...</p>
+            <span class="role">Delivery Head</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactSection" class="section">
+      <h1>CONTACT US</h1>
+      <p>Get in touch</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
